@@ -141,7 +141,7 @@ class PoseViewer
                     cv::FONT_HERSHEY_COMPLEX, 0.5, cv::Scalar(255,255,255), 1);
 
     drawing_ = false; // notify
-    std::cout << t.toSec() << std::endl;
+    printf("%0.9f %0.9f %0.9f %0.9f\n", t.toSec(), r[0], r[1], r[2]);
   }
   void display()
   {
