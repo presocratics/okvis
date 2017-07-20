@@ -141,6 +141,7 @@ class PoseViewer
                     cv::FONT_HERSHEY_COMPLEX, 0.5, cv::Scalar(255,255,255), 1);
 
     drawing_ = false; // notify
+    std::cout << t.toSec() << std::endl;
   }
   void display()
   {
